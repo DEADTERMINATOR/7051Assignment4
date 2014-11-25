@@ -1,0 +1,6 @@
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\SkinnedModel\bin\x86\Debug\SkinnedModel.dll
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\SkinnedModel\bin\x86\Debug\SkinnedModel.pdb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\SkinnedModel\obj\x86\Debug\SkinnedModelWindows.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\SkinnedModel\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\SkinnedModel\obj\x86\Debug\SkinnedModel.dll
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\SkinnedModel\obj\x86\Debug\SkinnedModel.pdb

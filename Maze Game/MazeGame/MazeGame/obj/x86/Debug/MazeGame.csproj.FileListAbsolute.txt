@@ -1,0 +1,61 @@
+c:\users\mark\documents\visual studio 2013\Projects\MazeGame\MazeGame\MazeGame\bin\x86\Debug\MazeGame.exe
+c:\users\mark\documents\visual studio 2013\Projects\MazeGame\MazeGame\MazeGame\bin\x86\Debug\MazeGame.pdb
+c:\users\mark\documents\visual studio 2013\Projects\MazeGame\MazeGame\MazeGame\obj\x86\Debug\MazeGame.csprojResolveAssemblyReference.cache
+c:\users\mark\documents\visual studio 2013\Projects\MazeGame\MazeGame\MazeGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\mark\documents\visual studio 2013\Projects\MazeGame\MazeGame\MazeGame\obj\x86\Debug\MazeGame.exe
+c:\users\mark\documents\visual studio 2013\Projects\MazeGame\MazeGame\MazeGame\obj\x86\Debug\MazeGame.pdb
+C:\Users\Mark\Documents\Visual Studio 2013\Projects\MazeGame\MazeGame\MazeGame\bin\x86\Debug\Content\SpriteFont1.xnb
+C:\Users\Mark\Documents\Visual Studio 2013\Projects\MazeGame\MazeGame\MazeGame\bin\x86\Debug\Content\stampedconcrete.xnb
+C:\Users\Mark\Documents\Visual Studio 2013\Projects\MazeGame\MazeGame\MazeGame\bin\x86\Debug\Content\brickwall.xnb
+C:\Users\Mark\Documents\Visual Studio 2013\Projects\MazeGame\MazeGame\MazeGame\bin\x86\Debug\Content\hammeredglasswall.xnb
+C:\Users\Mark\Documents\Visual Studio 2013\Projects\MazeGame\MazeGame\MazeGame\bin\x86\Debug\Content\metalwall.xnb
+C:\Users\Mark\Documents\Visual Studio 2013\Projects\MazeGame\MazeGame\MazeGame\bin\x86\Debug\Content\pebblewall.xnb
+C:\Users\Nick\Documents\7051Assignment3\MazeGame\MazeGame\bin\x86\Debug\Content\SpriteFont1.xnb
+C:\Users\Nick\Documents\7051Assignment3\MazeGame\MazeGame\bin\x86\Debug\Content\stampedconcrete.xnb
+C:\Users\Nick\Documents\7051Assignment3\MazeGame\MazeGame\bin\x86\Debug\Content\brickwall.xnb
+C:\Users\Nick\Documents\7051Assignment3\MazeGame\MazeGame\bin\x86\Debug\Content\hammeredglasswall.xnb
+C:\Users\Nick\Documents\7051Assignment3\MazeGame\MazeGame\bin\x86\Debug\Content\metalwall.xnb
+C:\Users\Nick\Documents\7051Assignment3\MazeGame\MazeGame\bin\x86\Debug\Content\pebblewall.xnb
+C:\Users\Nick\Documents\7051Assignment3\MazeGame\MazeGame\bin\x86\Debug\MazeGame.exe
+C:\Users\Nick\Documents\7051Assignment3\MazeGame\MazeGame\bin\x86\Debug\MazeGame.pdb
+C:\Users\Nick\Documents\7051Assignment3\MazeGame\MazeGame\obj\x86\Debug\MazeGame.csprojResolveAssemblyReference.cache
+C:\Users\Nick\Documents\7051Assignment3\MazeGame\MazeGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Nick\Documents\7051Assignment3\MazeGame\MazeGame\obj\x86\Debug\MazeGame.exe
+C:\Users\Nick\Documents\7051Assignment3\MazeGame\MazeGame\obj\x86\Debug\MazeGame.pdb
+C:\Users\Nick\Documents\7051Assignment3\MazeGame\MazeGame\bin\x86\Debug\Content\Ambient.xnb
+C:\Users\Nick\Documents\7051Assignment3\MazeGame\MazeGame\bin\x86\Debug\Content\Shader.xnb
+C:\Users\Nick\Documents\7051Assignment3\MazeGame\MazeGame\bin\x86\Debug\Content\Shader2.xnb
+C:\Users\Nick\Documents\7051Assignment3\MazeGame\MazeGame\bin\x86\Debug\Content\Texture.xnb
+C:\Users\Nick\Documents\7051Assignment3\MazeGame\MazeGame\bin\x86\Debug\Content\Light.xnb
+C:\Users\Nick\Documents\7051Assignment3\MazeGame\MazeGame\bin\x86\Debug\Content\LightDark.xnb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\Content\SpriteFont1.xnb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\Content\stampedconcrete.xnb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\Content\brickwall.xnb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\Content\hammeredglasswall.xnb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\Content\metalwall.xnb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\Content\pebblewall.xnb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\Content\Light.xnb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\Content\LightDark.xnb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\Content\Ambient.xnb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\Content\Shader.xnb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\Content\Shader2.xnb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\Content\Texture.xnb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\MazeGame.exe
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\MazeGame.pdb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\obj\x86\Debug\MazeGame.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\obj\x86\Debug\MazeGame.exe
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\obj\x86\Debug\MazeGame.pdb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\Content\0514.xnb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\Content\dayMusic.xnb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\Content\nightMusic.xnb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\Content\wallHit.xnb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\Content\dayMusic.wma
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\Content\nightMusic.wma
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\Content\dude.xnb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\Content\head_0.xnb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\Content\jacket_0.xnb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\Content\pants_0.xnb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\Content\upBodyC_0.xnb
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\SkinnedModel.dll
+C:\Users\Mark\Desktop\Assignment 4\Maze Game\MazeGame\MazeGame\bin\x86\Debug\SkinnedModel.pdb
