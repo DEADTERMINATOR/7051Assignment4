@@ -75,6 +75,7 @@
     <Compile Include="Ball.cs" />
     <Compile Include="Command.cs" />
     <Compile Include="Divider.cs" />
+    <Compile Include="GameState.cs" />
     <Compile Include="KeyboardHandler.cs">
       <SubType>Code</SubType>
     </Compile>

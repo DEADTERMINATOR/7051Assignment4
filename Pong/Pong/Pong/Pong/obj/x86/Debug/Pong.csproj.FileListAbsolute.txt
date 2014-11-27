@@ -1,0 +1,9 @@
+C:\Users\A00824983\Documents\Pong\Pong\Pong\bin\x86\Debug\Content\paddle.xnb
+C:\Users\A00824983\Documents\Pong\Pong\Pong\bin\x86\Debug\Content\ball.xnb
+C:\Users\A00824983\Documents\Pong\Pong\Pong\bin\x86\Debug\Content\MessageFont.xnb
+C:\Users\A00824983\Documents\Pong\Pong\Pong\bin\x86\Debug\Pong.exe
+C:\Users\A00824983\Documents\Pong\Pong\Pong\bin\x86\Debug\Pong.pdb
+C:\Users\A00824983\Documents\Pong\Pong\Pong\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\A00824983\Documents\Pong\Pong\Pong\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\A00824983\Documents\Pong\Pong\Pong\obj\x86\Debug\Pong.exe
+C:\Users\A00824983\Documents\Pong\Pong\Pong\obj\x86\Debug\Pong.pdb

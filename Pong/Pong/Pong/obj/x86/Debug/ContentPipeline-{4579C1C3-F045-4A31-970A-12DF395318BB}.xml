@@ -7,8 +7,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Mark\Desktop\A00837724 7051 Assignment 2\Pong\Pong\bin\x86\Debug\Content\MessageFont.xnb</Output>
-      <Time>2014-11-12T15:06:26.5827724-08:00</Time>
+      <Output>C:\Users\Nick\Documents\7051Assignment4\7051Assignment4\Pong\Pong\Pong\bin\x86\Debug\Content\MessageFont.xnb</Output>
+      <Time>2014-11-26T16:05:49.1455358-08:00</Time>
     </Item>
     <Item>
       <Source>4359__noisecollector__pongblipf4.wav</Source>
@@ -16,8 +16,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Mark\Desktop\A00837724 7051 Assignment 2\Pong\Pong\bin\x86\Debug\Content\ballBouncing.xnb</Output>
-      <Time>2014-11-12T15:19:56.8096762-08:00</Time>
+      <Output>C:\Users\Nick\Documents\7051Assignment4\7051Assignment4\Pong\Pong\Pong\bin\x86\Debug\Content\ballBouncing.xnb</Output>
+      <Time>2014-11-26T16:05:49.0545257-08:00</Time>
     </Item>
     <Item>
       <Source>ACDC - Thunderstruck lyrics.mp3</Source>
@@ -25,9 +25,9 @@
       <Importer>Mp3Importer</Importer>
       <Processor>SongProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Mark\Desktop\A00837724 7051 Assignment 2\Pong\Pong\bin\x86\Debug\Content\thunderstruck.xnb</Output>
-      <Extra>C:\Users\Mark\Desktop\A00837724 7051 Assignment 2\Pong\Pong\bin\x86\Debug\Content\thunderstruck.wma</Extra>
-      <Time>2014-11-12T15:32:24.3496941-08:00</Time>
+      <Output>C:\Users\Nick\Documents\7051Assignment4\7051Assignment4\Pong\Pong\Pong\bin\x86\Debug\Content\thunderstruck.xnb</Output>
+      <Extra>C:\Users\Nick\Documents\7051Assignment4\7051Assignment4\Pong\Pong\Pong\bin\x86\Debug\Content\thunderstruck.wma</Extra>
+      <Time>2014-11-26T16:05:49.1435368-08:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -36,10 +36,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Mark\Desktop\A00837724 7051 Assignment 2\Pong\PongContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Mark\Desktop\A00837724 7051 Assignment 2\Pong\Pong\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Mark\Desktop\A00837724 7051 Assignment 2\Pong\Pong\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Mark\Desktop\A00837724 7051 Assignment 2\Pong\Pong\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Nick\Documents\7051Assignment4\7051Assignment4\Pong\Pong\PongContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Nick\Documents\7051Assignment4\7051Assignment4\Pong\Pong\Pong\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Nick\Documents\7051Assignment4\7051Assignment4\Pong\Pong\Pong\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Nick\Documents\7051Assignment4\7051Assignment4\Pong\Pong\Pong\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -67,8 +67,8 @@
         <Value>2011-09-01T16:22:30-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2014-10-18T14:27:20.4028982-07:00</Value>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-10-01T22:54:58.6751455-07:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

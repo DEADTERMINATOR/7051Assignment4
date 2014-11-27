@@ -18,6 +18,7 @@ namespace Pong
     {
         const float SafeAreaPortion = 0.03f;
 
+        GameState currentState;
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         SpriteFont font;
@@ -73,6 +74,7 @@ namespace Pong
             multiplayer = false;
             random = false;
             paused = true;
+            currentState = GameState.INGAME;
 
             base.Initialize();
         }
@@ -116,78 +118,85 @@ namespace Pong
                 state.IsKeyDown(Keys.Escape))
                 this.Exit();
 
-            if (MediaPlayer.State == MediaState.Stopped)
+            switch (currentState)
             {
-                MediaPlayer.Play(bgMusic);
+                case GameState.INGAME:
+                    if (MediaPlayer.State == MediaState.Stopped)
+                    {
+                        MediaPlayer.Play(bgMusic);
+                    }
+
+                    if ((state.IsKeyDown(Keys.P) || newGamepadState.Buttons.Start == ButtonState.Pressed) && !consoleUp)
+                    {
+                        paused = true;
+                    }
+
+                    if ((state.IsKeyDown(Keys.Space) || newGamepadState.Buttons.A == ButtonState.Pressed) && !consoleUp)
+                    {
+                        paused = false;
+                    }
+
+                    if (paused)
+                    {
+                        MediaPlayer.Pause();
+                    }
+
+                    Handle360Commands(oldGamepadState, newGamepadState);
+
+                    if (consoleUp)
+                    {
+                        handler.Update();
+                        HandleConsoleCommands();
+                        if (state.IsKeyDown(Keys.OemTilde))
+                        {
+                            consoleUp = false;
+                        }
+                    }
+                    else if (!paused)
+                    {
+                        MediaPlayer.Resume();
+
+                        if (winner != 0)
+                        {
+                            winner = 0;
+                        }
+
+                        ball.position += ball.velocity;
+
+                        if (state.IsKeyDown(Keys.W) || newGamepadState.ThumbSticks.Left.Y > 0)
+                        {
+                            MoveUp(1);
+                        }
+                        if (state.IsKeyDown(Keys.S) || newGamepadState.ThumbSticks.Left.Y < 0)
+                        {
+                            MoveDown(1);
+                        }
+
+                        if (multiplayer)
+                        {
+                            MultiplayerUpdate(state);
+                        }
+                        else
+                        {
+                            SingleUpdate();
+                        }
+
+                        playerOnePaddle.position.Y = MathHelper.Clamp(playerOnePaddle.position.Y, playingField.Top, playingField.Bottom - playerOnePaddle.height);
+                        playerTwoPaddle.position.Y = MathHelper.Clamp(playerTwoPaddle.position.Y, playingField.Top, playingField.Bottom - playerTwoPaddle.height);
+
+                        CheckForCollision();
+                    }
+
+                    if (state.IsKeyDown(Keys.C))
+                    {
+                        handler.firstKey = true;
+                        consoleUp = true;
+                        paused = true;
+                    }
+                    break;
             }
 
-            if ((state.IsKeyDown(Keys.P) || newGamepadState.Buttons.Start == ButtonState.Pressed) && !consoleUp)
-            {
-                paused = true;
-            }
 
-            if ((state.IsKeyDown(Keys.Space) || newGamepadState.Buttons.A == ButtonState.Pressed) && !consoleUp)
-            {
-                paused = false;
-            }
-
-            if (paused)
-            {
-                MediaPlayer.Pause();
-            }
-
-            Handle360Commands(oldGamepadState, newGamepadState);
-
-            if (consoleUp)
-            {
-                handler.Update();
-                HandleConsoleCommands();
-                if (state.IsKeyDown(Keys.OemTilde))
-                {
-                    consoleUp = false;
-                }
-            }
-            else if (!paused)
-            {
-                MediaPlayer.Resume();
-
-                if (winner != 0)
-                {
-                    winner = 0;
-                }
-
-                ball.position += ball.velocity;
-
-                if (state.IsKeyDown(Keys.W) || newGamepadState.ThumbSticks.Left.Y > 0)
-                {
-                    MoveUp(1);
-                }
-                if (state.IsKeyDown(Keys.S) || newGamepadState.ThumbSticks.Left.Y < 0)
-                {
-                    MoveDown(1);
-                }
-
-                if (multiplayer)
-                {
-                    MultiplayerUpdate(state);
-                }
-                else
-                {
-                    SingleUpdate();
-                }
-
-                playerOnePaddle.position.Y = MathHelper.Clamp(playerOnePaddle.position.Y, playingField.Top, playingField.Bottom - playerOnePaddle.height);
-                playerTwoPaddle.position.Y = MathHelper.Clamp(playerTwoPaddle.position.Y, playingField.Top, playingField.Bottom - playerTwoPaddle.height);
-
-                CheckForCollision();
-            }
-
-            if (state.IsKeyDown(Keys.C))
-            {
-                handler.firstKey = true;
-                consoleUp = true;
-                paused = true;
-            }
 
             base.Update(gameTime);
         }
@@ -294,11 +303,11 @@ namespace Pong
             if (invisibleBall != null)
             {
                 Rectangle boundingInvisibleBall = new Rectangle((int)invisibleBall.position.X, (int)invisibleBall.position.Y, invisibleBall.width, invisibleBall.height);
-                if(boundingInvisibleBall.Intersects(boundingPaddleTwo) || boundingInvisibleBall.Left > playingField.Right)
+                if (boundingInvisibleBall.Intersects(boundingPaddleTwo) || boundingInvisibleBall.Left > playingField.Right)
                 {
                     DestroyInvisibleBall();
                 }
-                else if(boundingInvisibleBall.Top < playingField.Top || boundingInvisibleBall.Bottom > playingField.Bottom)
+                else if (boundingInvisibleBall.Top < playingField.Top || boundingInvisibleBall.Bottom > playingField.Bottom)
                 {
                     invisibleBall.velocity.Y *= -1;
                     invisibleBall.position += invisibleBall.velocity;
@@ -310,12 +319,12 @@ namespace Pong
                 ball.velocity.X *= -1;
                 ball.position += ball.velocity;
                 ballBouncing.Play();
-                if(!multiplayer)
+                if (!multiplayer)
                 {
                     CreateInvisibleBall();
                 }
             }
-            
+
             else if (boundingBall.Intersects(boundingPaddleTwo))
             {
                 ball.velocity.X *= -1;
