@@ -7,3 +7,12 @@ C:\Users\A00824983\Documents\Pong\Pong\Pong\obj\Xbox 360\Debug\ResolveAssemblyRe
 C:\Users\A00824983\Documents\Pong\Pong\Pong\obj\Xbox 360\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\A00824983\Documents\Pong\Pong\Pong\obj\Xbox 360\Debug\Pong.exe
 C:\Users\A00824983\Documents\Pong\Pong\Pong\obj\Xbox 360\Debug\Pong.pdb
+C:\Users\A00824983\Documents\7051Assignment4\Pong2\Pong\Pong\Pong\obj\Xbox 360\Debug\ResolveAssemblyReference.cache
+C:\Users\A00824983\Documents\7051Assignment4\Pong2\Pong\Pong\Pong\obj\Xbox 360\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\A00824983\Documents\7051Assignment4\Pong2\Pong\Pong\Pong\obj\Xbox 360\Debug\Pong.exe
+C:\Users\A00824983\Documents\7051Assignment4\Pong2\Pong\Pong\Pong\obj\Xbox 360\Debug\Pong.pdb
+C:\Users\A00824983\Documents\7051Assignment4\Pong2\Pong\Pong\Pong\bin\Xbox 360\Debug\Content\paddle.xnb
+C:\Users\A00824983\Documents\7051Assignment4\Pong2\Pong\Pong\Pong\bin\Xbox 360\Debug\Content\ball.xnb
+C:\Users\A00824983\Documents\7051Assignment4\Pong2\Pong\Pong\Pong\bin\Xbox 360\Debug\Content\MessageFont.xnb
+C:\Users\A00824983\Documents\7051Assignment4\Pong2\Pong\Pong\Pong\bin\Xbox 360\Debug\Pong.exe
+C:\Users\A00824983\Documents\7051Assignment4\Pong2\Pong\Pong\Pong\bin\Xbox 360\Debug\Pong.pdb

@@ -41,9 +41,9 @@ namespace Pong
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Begin();
+            //spriteBatch.Begin();
             spriteBatch.Draw(paddle, position, Color.White);
-            spriteBatch.End();
+            //spriteBatch.End();
         }
 
         public void Update()

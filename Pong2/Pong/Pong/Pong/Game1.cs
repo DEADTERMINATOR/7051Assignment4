@@ -50,8 +50,9 @@ namespace Pong
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-
+//#if XBOX
             Components.Add(new GamerServicesComponent(this));
+//#endif
         }
 
         /// <summary>
@@ -76,7 +77,7 @@ namespace Pong
 
             screenBounds = v.Bounds;
             console = new Console(new Vector2(v.Width, v.Height / 2f), new Vector2(0, v.Height / 2f), GraphicsDevice, myFont);
-            ball = new Ball(new Vector2((v.Width / 2f) - (ballTex.Width / 2f), (v.Height / 2f) - (ballTex.Height / 2f)), ballTex, new Vector2(-5f, 0));
+            ball = new Ball(new Vector2((v.Width / 2f) - (ballTex.Width / 2f), (v.Height / 2f) - (ballTex.Height / 2f)), ballTex, new Vector2(0, 0));
             bg = new Background(v, myFont);
 
 
@@ -239,6 +240,8 @@ namespace Pong
                 UpdateLocalGamer(gamer);
             }
 
+            if (ball.velocity.X == 0 && IsPressed(Keys.Enter, Buttons.Start))
+                ball.velocity = new Vector2(-5f, 0);
 
             ball.Update();
 
@@ -270,6 +273,7 @@ namespace Pong
             // Update the tank.
             ReadPaddleInputs(localPaddle, gamer.SignedInGamer.PlayerIndex);
 
+            localPaddle.Update();
 
 
             if (localPaddle.bound.Bottom > v.Height)
@@ -306,14 +310,14 @@ namespace Pong
                 //Increment player1 score
                 bg.IncrementP1();
                 //reposition ball
-                ball = new Ball(new Vector2((v.Width / 2f) - (ballTex.Width / 2f), (v.Height / 2f) - (ballTex.Height / 2f)), ballTex, new Vector2(-5f, 0));
+                ball = new Ball(new Vector2((v.Width / 2f) - (ballTex.Width / 2f), (v.Height / 2f) - (ballTex.Height / 2f)), ballTex, new Vector2(0f, 0));
             }
             if (ball.bound.Left < 0)
             {
                 //Increment player2 score
                 bg.IncrementP2();
                 //reposition ball
-                ball = new Ball(new Vector2((v.Width / 2f) - (ballTex.Width / 2f), (v.Height / 2f) - (ballTex.Height / 2f)), ballTex, new Vector2(5f, 0));
+                ball = new Ball(new Vector2((v.Width / 2f) - (ballTex.Width / 2f), (v.Height / 2f) - (ballTex.Height / 2f)), ballTex, new Vector2(0f, 0));
             }
             ball.Update();
             if (bg.p1Score >= 5)
@@ -361,189 +365,7 @@ namespace Pong
         }
 
 
-        /*
-        /// <summary>
-        /// Allows the game to run logic such as updating the world,
-        /// checking for collisions, gathering input, and playing audio.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
-        protected void UpdateLocalGamer(GameTime gameTime)
-        {
-            // Allows the game to exit
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-                this.Exit();
-            player1.Update(gameTime);
-            player2.Update(gameTime);
-
-
-            if (consoleUp)
-            {
-                Keys[] pressed = Keyboard.GetState().GetPressedKeys();
-                foreach (Keys i in pressed)
-                {
-                    if (lastPressed.IsKeyUp(i))
-                    {
-                        if (i == Keys.Back) console.Backspace();
-                        else if (i == Keys.Enter)
-                        {
-                            RunConsoleCommand(console.returnCommand());
-                        }
-                        else console.Append(i.ToString());
-                    }
-                }
-                //lastPressed = Keyboard.GetState();
-            }
-            else if (gameOver)
-            {
-                if (Keyboard.GetState().IsKeyDown(Keys.Space) || GamePad.GetState(PlayerIndex.One).Buttons.Start == ButtonState.Pressed ||
-                    GamePad.GetState(PlayerIndex.Two).Buttons.Start == ButtonState.Pressed)
-                {
-                    bg = new Background(v, myFont);
-                    ball.velocity.X = -5f;
-                    gameOver = false;
-                }
-            }
-            else //console is not up & not gameOver
-            {
-                ball.Update(gameTime);
-                KeyboardState state = Keyboard.GetState();
-                GamePadState p1State = GamePad.GetState(PlayerIndex.One);
-                GamePadState p2State = GamePad.GetState(PlayerIndex.Two);
-
-                //Keyboard input
-                if (state.IsKeyDown(Keys.Down))
-                {
-                    player2.MoveDown();
-                    if (player2.bound.Bottom > v.Height)
-                    {
-                        player2.MoveUp();
-                    }
-                }
-                if (state.IsKeyDown(Keys.Up))
-                {
-                    player2.MoveUp();
-                    if (player2.bound.Top < 0)
-                    {
-                        player2.MoveDown();
-                    }
-                }
-                if (state.IsKeyDown(Keys.S))
-                {
-                    player1.MoveDown();
-                    if (player1.bound.Bottom > v.Height)
-                    {
-                        player1.MoveUp();
-                    }
-                }
-                if (state.IsKeyDown(Keys.W))
-                {
-                    player1.MoveUp();
-                    if (player1.bound.Top < 0)
-                    {
-                        player1.MoveDown();
-                    }
-                }
-
-                //Gamepad input
-                if (p1State.DPad.Up == ButtonState.Pressed)
-                {
-                    player1.MoveUp();
-                    if (player1.bound.Top < 0)
-                    {
-                        player1.MoveDown();
-                    }
-                }
-                if (p1State.DPad.Down == ButtonState.Pressed)
-                {
-                    player1.MoveDown();
-                    if (player1.bound.Bottom > v.Height)
-                    {
-                        player1.MoveUp();
-                    }
-                }
-                if (p2State.DPad.Up == ButtonState.Pressed)
-                {
-                    player2.MoveUp();
-                    if (player2.bound.Top < 0)
-                    {
-                        player2.MoveDown();
-                    }
-                }
-                if (p2State.DPad.Down == ButtonState.Pressed)
-                {
-                    player2.MoveDown();
-                    if (player2.bound.Bottom > v.Height)
-                    {
-                        player2.MoveUp();
-                    }
-                }
-
-                if (ball.bound.Intersects(player1.bound))
-                {
-                    ball.FlipXVelocity();
-                    ball.velocity.Y =
-                        (ball.bound.Top - (player1.bound.Top + player1.bound.Height / 2f)) * 0.25f;
-                }
-                else if (ball.bound.Intersects(player2.bound))
-                {
-                    ball.FlipXVelocity();
-                    ball.velocity.Y =
-                        (ball.bound.Top - (player2.bound.Top + player2.bound.Height / 2f)) * 0.25f;
-                }
-
-                if (ball.bound.Bottom > v.Height)
-                {
-                    ball.FlipYVelocity();
-                }
-                if (ball.bound.Top < 0)
-                {
-                    ball.FlipYVelocity();
-                }
-
-                if (ball.bound.Right > v.Bounds.Width)
-                {
-                    //Increment player1 score
-                    bg.IncrementP1();
-                    //reposition ball
-                    ball = new Ball(new Vector2((v.Width / 2f) - (ballTex.Width / 2f), (v.Height / 2f) - (ballTex.Height / 2f)), ballTex, new Vector2(-5f, 0));
-                }
-                if (ball.bound.Left < 0)
-                {
-                    //Increment player2 score
-                    bg.IncrementP2();
-                    //reposition ball
-                    ball = new Ball(new Vector2((v.Width / 2f) - (ballTex.Width / 2f), (v.Height / 2f) - (ballTex.Height / 2f)), ballTex, new Vector2(5f, 0));
-                }
-                if (bg.p1Score >= 5)
-                {
-                    gameOver = true;
-                    ball.velocity = Vector2.Zero;
-                }
-                else if (bg.p2Score >= 5)
-                {
-                    gameOver = true;
-                    ball.velocity = Vector2.Zero;
-                }
-
-            }
-
-            if (!consoleKeyPressed)
-            {
-                if (Keyboard.GetState().IsKeyDown(Keys.C) && !consoleUp)
-                {
-                    consoleUp = true;
-                    console.Clear();
-                    consoleKeyPressed = true;
-                }
-
-            }
-            else if (!Keyboard.GetState().IsKeyDown(Keys.C)) consoleKeyPressed = false;
-
-            lastPressed = Keyboard.GetState();
-
-            //base.Update(gameTime);
-        }*/
-
+        
 
 
 
@@ -553,6 +375,10 @@ namespace Pong
         {
             //if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
             //    this.Exit();
+            lastPressed = currentState;
+            currentState = Keyboard.GetState();
+            currentPad = GamePad.GetState(PlayerIndex.One);
+
             if (IsPressed(Keys.Escape, Buttons.Back))
                 this.Exit();
 

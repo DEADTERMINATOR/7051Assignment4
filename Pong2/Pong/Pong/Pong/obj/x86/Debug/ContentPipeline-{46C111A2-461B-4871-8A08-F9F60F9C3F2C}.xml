@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\A00824983\Documents\Pong\Pong\Pong\bin\x86\Debug\Content\paddle.xnb</Output>
-      <Time>2014-10-15T12:16:56.1964842-07:00</Time>
+      <Output>C:\Users\A00824983\Documents\7051Assignment4\Pong2\Pong\Pong\Pong\bin\x86\Debug\Content\paddle.xnb</Output>
+      <Time>2014-11-26T21:13:11.7986818-08:00</Time>
     </Item>
     <Item>
       <Source>ball.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\A00824983\Documents\Pong\Pong\Pong\bin\x86\Debug\Content\ball.xnb</Output>
-      <Time>2014-10-15T12:12:23.3320342-07:00</Time>
+      <Output>C:\Users\A00824983\Documents\7051Assignment4\Pong2\Pong\Pong\Pong\bin\x86\Debug\Content\ball.xnb</Output>
+      <Time>2014-11-26T21:13:11.7518881-08:00</Time>
     </Item>
     <Item>
       <Source>MessageFont.spritefont</Source>
@@ -25,8 +25,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\A00824983\Documents\Pong\Pong\Pong\bin\x86\Debug\Content\MessageFont.xnb</Output>
-      <Time>2014-10-15T11:42:04.3510342-07:00</Time>
+      <Output>C:\Users\A00824983\Documents\7051Assignment4\Pong2\Pong\Pong\Pong\bin\x86\Debug\Content\MessageFont.xnb</Output>
+      <Time>2014-11-26T21:13:11.7518881-08:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -35,10 +35,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\A00824983\Documents\Pong\Pong\PongContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\A00824983\Documents\Pong\Pong\Pong\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\A00824983\Documents\Pong\Pong\Pong\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\A00824983\Documents\Pong\Pong\Pong\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\A00824983\Documents\7051Assignment4\Pong2\Pong\Pong\PongContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\A00824983\Documents\7051Assignment4\Pong2\Pong\Pong\Pong\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\A00824983\Documents\7051Assignment4\Pong2\Pong\Pong\Pong\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\A00824983\Documents\7051Assignment4\Pong2\Pong\Pong\Pong\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
