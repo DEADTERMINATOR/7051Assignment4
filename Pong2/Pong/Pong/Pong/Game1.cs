@@ -205,13 +205,13 @@ namespace Pong
             int gamerIndex = networkSession.AllGamers.IndexOf(e.Gamer);
             if (gamerIndex == 0)
             {
-                e.Gamer.Tag = new Paddle(new Vector2(1, v.Height / 2f - paddleTex.Height / 2f), paddleTex);
+                e.Gamer.Tag = new Paddle(new Vector2(1.5f, v.Height / 2f - paddleTex.Height / 2f), paddleTex);
 
 
             }
             else
             {
-                e.Gamer.Tag = new Paddle(new Vector2(v.Width - paddleTex.Width - 1, v.Height / 2f - paddleTex.Height / 2f), paddleTex);
+                e.Gamer.Tag = new Paddle(new Vector2(v.Width - paddleTex.Width - 1.5f, v.Height / 2f - paddleTex.Height / 2f), paddleTex);
             }
         }
 
